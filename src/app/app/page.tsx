@@ -73,7 +73,10 @@ export default function Page() {
                       Part Of Speech
                     </CardContent>
                     <CardFooter>
-                      <Link href="#" className="underline text-blue-500">
+                      <Link
+                        href="/app/modul/123"
+                        className="underline text-blue-500"
+                      >
                         Lanjutkan
                       </Link>
                     </CardFooter>
