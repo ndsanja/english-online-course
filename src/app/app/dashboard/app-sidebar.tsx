@@ -12,6 +12,14 @@ import {
   Send,
   Settings2,
   SquareTerminal,
+  Trophy,
+  CalendarCheck,
+  GraduationCap,
+  BriefcaseBusiness,
+  LibraryBig,
+  ShoppingBag,
+  Headset,
+  CircleHelp,
 } from "lucide-react";
 
 import { NavMain } from "@/app/app/dashboard/nav-main";
@@ -36,63 +44,67 @@ const data = {
   },
   navMain: [
     {
-      title: "Playground",
+      title: "Kelas",
       url: "#",
-      icon: SquareTerminal,
+      icon: BookOpen,
       isActive: true,
       items: [
         {
-          title: "History",
+          title: "Dashboard",
           url: "#",
         },
         {
-          title: "Starred",
+          title: "Sedang Dipelajari",
           url: "#",
         },
         {
-          title: "Settings",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Models",
-      url: "#",
-      icon: Bot,
-      items: [
-        {
-          title: "Genesis",
+          title: "Telah Diselesaikan",
           url: "#",
         },
         {
-          title: "Explorer",
+          title: "Tes & Ujian",
           url: "#",
         },
         {
-          title: "Quantum",
+          title: "Progres & Sertifikat",
           url: "#",
         },
       ],
     },
     {
-      title: "Documentation",
+      title: "Program & Learning Path",
       url: "#",
-      icon: BookOpen,
+      icon: LibraryBig,
       items: [
         {
-          title: "Introduction",
+          title: "Semua Program",
           url: "#",
         },
         {
-          title: "Get Started",
+          title: "Learning Path",
           url: "#",
         },
         {
-          title: "Tutorials",
+          title: "Tes & Ujian",
+          url: "#",
+        },
+      ],
+    },
+    {
+      title: "Status Langganan",
+      url: "#",
+      icon: ShoppingBag,
+      items: [
+        {
+          title: "Langganan Aktif",
           url: "#",
         },
         {
-          title: "Changelog",
+          title: "Daftar Pembelian",
+          url: "#",
+        },
+        {
+          title: "Riwayat Pembelian",
           url: "#",
         },
       ],
@@ -103,19 +115,11 @@ const data = {
       icon: Settings2,
       items: [
         {
+          title: "Edit Profile",
+          url: "#",
+        },
+        {
           title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
           url: "#",
         },
       ],
@@ -123,31 +127,36 @@ const data = {
   ],
   navSecondary: [
     {
-      title: "Support",
+      title: "Hubungi CS",
       url: "#",
-      icon: LifeBuoy,
+      icon: Headset,
     },
     {
-      title: "Feedback",
+      title: "FAQ",
       url: "#",
-      icon: Send,
+      icon: CircleHelp,
     },
   ],
   projects: [
     {
-      name: "Design Engineering",
+      name: "Challenge",
       url: "#",
-      icon: Frame,
+      icon: Trophy,
     },
     {
-      name: "Sales & Marketing",
+      name: "Event",
       url: "#",
-      icon: PieChart,
+      icon: CalendarCheck,
     },
     {
-      name: "Travel",
+      name: "Info Beasiswa",
       url: "#",
-      icon: Map,
+      icon: GraduationCap,
+    },
+    {
+      name: "Info Job Luar & Dalam Negeri",
+      url: "#",
+      icon: BriefcaseBusiness,
     },
   ],
 };
