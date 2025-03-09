@@ -1,14 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-  ArrowLeft,
-  ArrowRight,
-  Search,
-  Menu,
-  MoreVertical,
-} from "lucide-react";
+import { ArrowLeft, ArrowRight, Search, MoreVertical } from "lucide-react";
 import { useRouter } from "next/navigation";
+import SheetList from "./SheetList";
 
 export default function ModulContent() {
   const router = useRouter();
@@ -27,7 +22,7 @@ export default function ModulContent() {
             <Search className="h-5 w-5 text-gray-600" />
           </Button>
           <Button variant="ghost" size="icon">
-            <Menu className="h-5 w-5 text-gray-600" />
+            <SheetList />
           </Button>
           <Button variant="ghost" size="icon">
             <MoreVertical className="h-5 w-5 text-gray-600" />
