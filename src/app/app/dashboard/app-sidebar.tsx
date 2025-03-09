@@ -55,7 +55,7 @@ const data = {
           url: "#",
         },
         {
-          title: "Tes & Ujian",
+          title: "Tes & Latihan",
           url: "#",
         },
         {
@@ -147,7 +147,7 @@ const data = {
       icon: GraduationCap,
     },
     {
-      name: "Info Job Luar & Dalam Negeri",
+      name: "Info Job Dalam & Luar Negeri",
       url: "#",
       icon: BriefcaseBusiness,
     },
