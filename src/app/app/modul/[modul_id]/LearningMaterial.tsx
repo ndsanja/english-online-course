@@ -9,7 +9,6 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { Lock, CheckCircle, Circle } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { use } from "react";
 
 export default function LearningMaterial() {
   const router = useRouter();
