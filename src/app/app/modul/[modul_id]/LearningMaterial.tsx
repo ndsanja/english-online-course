@@ -34,7 +34,7 @@ export default function LearningMaterial() {
                   <Checkbox hidden id="part-of-speech" checked disabled />
                   <label
                     htmlFor="part-of-speech"
-                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    className="text-sm font-medium leading-none peer-disabled:opacity-70"
                   >
                     Part of Speech
                   </label>

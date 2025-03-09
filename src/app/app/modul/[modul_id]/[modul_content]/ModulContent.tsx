@@ -87,14 +87,16 @@ export default function ModulContent() {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="z-50 bg-white fixed bottom-0 right-0 left-0 flex justify-between items-center h-[60px] border-t">
-          <Button variant="outline" size="icon">
-            <ArrowLeft className="h-4 w-4" />
-          </Button>
-          <span className="text-sm font-medium">Forum Diskusi</span>
-          <Button variant="outline" size="icon">
-            <ArrowRight className="h-4 w-4" />
-          </Button>
+        <div className="z-50 bg-white fixed bottom-0 right-0 left-0  h-[60px] border-t">
+          <div className="flex justify-between items-center px-2 h-full">
+            <Button variant="outline" size="icon">
+              <ArrowLeft className="h-4 w-4" />
+            </Button>
+            <span className="text-sm font-medium">Forum Diskusi</span>
+            <Button variant="outline" size="icon">
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          </div>
         </div>
       </div>
     </div>
