@@ -31,7 +31,7 @@ export default function SheetList() {
       </SheetTrigger>
       <SheetContent
         side="right"
-        className="w-[400px] sm:w-[500px] overflow-y-auto"
+        className="w-[90vw] sm:w-[400px] overflow-y-auto"
       >
         <SheetHeader>
           <SheetTitle>Materi Belajar</SheetTitle>

@@ -124,3 +124,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 5px,
+    #d1d5db 5px,
+    #d1d5db 10px
+  );
+}
