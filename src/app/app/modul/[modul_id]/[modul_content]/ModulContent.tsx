@@ -36,9 +36,6 @@ export default function ModulContent({ content }: Props) {
 
       {/* Main Content */}
       <div className="p-4 pb-[100px] max-w-2xl mx-auto">
-        {/* Heading */}
-        <h1 className="text-3xl font-bold mb-4">Ekspektasi</h1>
-
         {/* Content */}
         <div className="space-y-4 text-gray-700">
           <MarkdownRenderer content={content} />

@@ -27,7 +27,7 @@ export default function LearningMaterial() {
           <AccordionContent>
             <div className="space-y-6 pl-4">
               <div
-                onClick={() => router.push("pos/pos-pronoun")}
+                onClick={() => router.push("pos/pos_part-of-speech")}
                 className="flex items-center justify-between"
               >
                 <div className="flex items-center gap-2">
@@ -41,7 +41,10 @@ export default function LearningMaterial() {
                 </div>
                 <CheckCircle className="h-4 w-4 text-green-500" />
               </div>
-              <div className="flex items-center justify-between">
+              <div
+                onClick={() => router.push("pos/pos_noun")}
+                className="flex items-center justify-between"
+              >
                 <div className="flex items-center gap-2">
                   <Checkbox hidden id="noun" checked disabled />
                   <label
@@ -53,7 +56,10 @@ export default function LearningMaterial() {
                 </div>
                 <CheckCircle className="h-4 w-4 text-green-500" />
               </div>
-              <div className="flex items-center justify-between">
+              <div
+                onClick={() => router.push("pos/pos_pronoun")}
+                className="flex items-center justify-between"
+              >
                 <div className="flex items-center gap-2">
                   <Checkbox hidden id="pronoun" />
                   <label

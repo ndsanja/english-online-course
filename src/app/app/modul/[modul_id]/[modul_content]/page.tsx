@@ -11,8 +11,8 @@ export default async function page({
   const { modul_content: slug } = await params;
   log(slug);
   const { frontmatter, content } = await getMarkdownContent({
-    folder: slug?.split("-")[0],
-    file: slug?.split("-")[1],
+    folder: slug?.split("_")[0],
+    file: slug?.split("_")[1],
   });
 
   return (
