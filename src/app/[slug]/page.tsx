@@ -1,8 +1,6 @@
 import { getMarkdownFromGitHub } from "@/lib/github";
 import matter from "gray-matter";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
-import EditForm from "./EditForm";
-import MarkdownEditor from "./MarkdownEditor";
 
 interface PageParams {
   params: {
@@ -22,7 +20,7 @@ export default async function Page({
   const path = `content/${slug}.md`;
   const { content, sha } = await getMarkdownFromGitHub(
     "ndsanja",
-    "english-online-course", // Pastikan ini benar
+    "english-online-course-content", // Pastikan ini benar
     path
   );
   const { data: frontmatter, content: markdownContent } = matter(content);
@@ -31,9 +29,9 @@ export default async function Page({
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-4">{frontmatter.title || slug}</h1>
       <MarkdownRenderer content={markdownContent} />
-      <h1>{sha}</h1>
+      {/* <h1>{sha}</h1> */}
 
-      <MarkdownEditor initialContent={content} sha={sha} slug={slug} />
+      {/* <MarkdownEditor initialContent={content} sha={sha} slug={slug} /> */}
     </div>
   );
 }
