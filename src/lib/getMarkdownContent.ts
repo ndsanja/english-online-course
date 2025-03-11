@@ -8,7 +8,7 @@ type Props = {
 };
 
 export async function getMarkdownContent({ folder, file }: Props) {
-  const filePath = path.join(process.cwd(), "contents", folder, `${file}.md`);
+  const filePath = path.join(process.cwd(), "content", folder, `${file}.md`);
   const fileContents = await fs.readFile(filePath, "utf8");
   const { data, content } = matter(fileContents);
 

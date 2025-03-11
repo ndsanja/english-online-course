@@ -10,14 +10,18 @@ interface PageParams {
 
 export const revalidate = 60; // ISR: Revalidate setiap 60 detik
 
-export default async function Page({ params }: PageParams) {
-  const { slug } = params;
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
 
   // Ambil konten dari GitHub
   const { content } = await getMarkdownFromGitHub(
     "ndsanja", // Ganti dengan username GitHub Anda
-    "ndsanja/english-online-course", // Ganti dengan nama repository
-    `contents/${slug}.md` // Path ke file Markdown
+    "english-online-course", // Ganti dengan nama repository
+    `${slug}.md` // Path ke file Markdown
   );
 
   // Parse frontmatter dan konten
