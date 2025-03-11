@@ -27,7 +27,7 @@ export default function LearningMaterial() {
           <AccordionContent>
             <div className="space-y-6 pl-4">
               <div
-                onClick={() => router.push("123/123")}
+                onClick={() => router.push("pos/pos-pronoun")}
                 className="flex items-center justify-between"
               >
                 <div className="flex items-center gap-2">
